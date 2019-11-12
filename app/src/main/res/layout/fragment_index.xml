@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:cardview="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <com.youth.banner.Banner
+
+        android:id="@+id/banner"
+        android:background="#eee"
+        android:layout_width="wrap_content"
+        android:layout_height="160dp"
+        ></com.youth.banner.Banner>
+
+    <!-- android:visibility="gone"-->
+    <RelativeLayout
+
+        android:id="@+id/show_ll"
+        android:background="#eee"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+        <View
+            android:visibility="gone"
+            android:id="@+id/solid"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="6dp"
+            android:layout_marginLeft="5dp"
+            android:layout_alignParentStart="true"
+            android:background="#303F9F"
+            android:layout_width="3dp"
+            android:layout_height="match_parent">
+        </View>
+        <TextView
+            android:id="@+id/xygk"
+            android:layout_marginLeft="7dp"
+            android:gravity="center|left"
+            android:textStyle="bold"
+            android:layout_alignBaseline="@+id/solid"
+            android:textSize="17sp"
+            android:layout_toRightOf="@+id/solid"
+            android:textColor="#333"
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!-- android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginTop="1dp"-->
+
+        <GridView
+            android:listSelector="@android:color/transparent"
+            android:padding="5dp"
+            android:id="@+id/Grid"
+            android:background="#eee"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:numColumns="auto_fit"
+            android:stretchMode="columnWidth"
+            android:horizontalSpacing="5dp"
+            android:verticalSpacing="5dp">
+
+
+        </GridView>
+    </LinearLayout>
+
+    <!--<GridView
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginTop="1dp"
+        android:id="@+id/Grid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:horizontalSpacing="2dp"
+        android:numColumns="auto_fit"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="2dp" >
+    </GridView>-->
+   <!-- <android.support.design.widget.TabLayout
+        android:id="@+id/tablayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#eee"
+        app:tabIndicatorColor="#303F9F"
+        app:tabMode="fixed"
+        app:tabSelectedTextColor="#303F9F"
+        app:tabTextColor="@android:color/black"
+        app:tabIndicatorHeight="5dp"
+        app:tabTextAppearance="@style/TabStyle"
+        />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/tab_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white" />-->
+    <!--       android:layout_weight="1"-->
+
+</LinearLayout>

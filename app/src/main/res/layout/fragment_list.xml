@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tablayout"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="10"
+            android:background="#eee"
+            app:tabIndicatorColor="#303F9F"
+            app:tabIndicatorHeight="5dp"
+            app:tabMode="fixed"
+            app:tabSelectedTextColor="#303F9F"
+            app:tabTextAppearance="@style/TabStyle"
+            app:tabTextColor="@android:color/black" />
+
+        <TextView
+            android:background="@drawable/left_border"
+            android:gravity="center"
+            android:id="@+id/add_res"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:textSize="20sp"
+            android:text="+" />
+
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:layout_below="@+id/add_res"
+        android:id="@+id/tab_viewpager"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white" />
+
+    <!--       android:layout_weight="1"-->
+
+</LinearLayout>
